@@ -190,5 +190,71 @@
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg)
     }
+}
+
+
+/* Hero Section */
+
+.Hero{
+    background: #000000;
+    background: linear-gradient( to right, #161616, #000000);
+    padding: 200px 0;
+}
+
+.Hero_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    /* margin: 0, auto; basically centers it? Apparently? */
+    margin: 0, auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.Hero_heading{
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.Hero_heading span{
+    background: #a33ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #d1d1d1, #a33ab4 );
+    background: linear-gradient(to right, #fcb045, #d1d1d1, #a33ab4 );
+    background-size: 100%;
+    /* what is webkit?
+    /* Waht is moz? */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.Hero_description{
+    font-size: 60px;
+    background: #da22ff;
+    background: -webkit-linear-gradient(to right, #911f, #d1d1d1, #22adad );
+    background: linear-gradient(to right, #1212aa, #d1d1d1, #22adad );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.highlight{
+    border-bottom: 3px solid rgb(132, 0, 255);
+}
+
+@media screen and (max-width:768px){
+    .Hero_heading{
+        font-size: 60px;
+    }
+
+    .Hero_description{
+        font-size: 40px;
+    }
 
 }
